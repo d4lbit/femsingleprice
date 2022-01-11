@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+/* mobile */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.5;
+    background-color: hsl(204, 43%, 93%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 90%;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin-top: 40px;
+    color: white;
+}
+
+h2 {
+    font-size: 17px;
+    color: white;
+    margin-bottom: 0;
+}
+
+p, li {
+    margin: 0 45px 0 0;
+    font-size: 16px;
+    color: hsl(204, 43%, 93%)
+}
+
+h1, h2, p, button {
+    margin-left: 40px;
+}
+
+.join {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.join h1 {
+    margin-top: 45px;
+    color: hsl(179, 62%, 43%);
+}
+
+.join h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.join p {
+    margin: 0 40px 45px 40px;
+    color: hsl(218, 22%, 67%)
+}
+
+.subscription {
+    width: 100%;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.subscription h2 {
+    font-size: 30px;
+}
+
+.subscription span {
+    color: #4abebd;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.subscription button {
+    height: 45px;
+    width: 75%;
+    border: 0;
+    margin: 35px 40px 45px 40px;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.why-us {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    background-color: #4abebd;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+
+li {
+    font-size: 13px;
+
+}
+
+footer {
+    height: 20px;
+    bottom: 0;
+}
+
+.attribution {
+    width: 100vw;
+    color: black;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+/* desktop */
+@media only screen and (min-width: 700px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        width: 47%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "join join"
+        "sub why-us"
+    }
+    
+    .join {
+        grid-area: join;
+        border-radius: 10px 10px 0 0;
+        background-color: white;
+    }
+    
+    .subscription {
+        height: 100%;
+        grid-area: sub;
+        border-radius: 0 0 0 10px;
+    }
+    
+    .subscription h2 {
+        font-size: 30px;
+    }
+    
+    .subscription button {
+        cursor: pointer;
+    }
+    
+    .why-us {
+        height: 100%;
+        grid-area: why-us;
+        border-radius: 0 0 10px 0;
+    }
+    
+    ul {
+        margin-bottom: 40px;
+    }
+    
+    li {
+        font-size: 13px;
+    } 
+
+    footer {
+        position: fixed;
+    }
+}
